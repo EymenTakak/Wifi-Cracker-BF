@@ -138,7 +138,7 @@ is_running = True
 
 while is_running:
     networks = scanwifi()
-    print("Hold CTRL+C to Select Network")
+    print("Press CTRL+C to Select Network")
     signal.signal(signal.SIGINT, handle_signal)
     time.sleep(1)
 
