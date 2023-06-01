@@ -57,7 +57,7 @@ def main(ssid, password, number):
 
 headers = ["Number",'SSID ', 'Channel', 'Signal', 'Authentication']
 
-
+"""
 def connect_to_wifi(ssid, password):
     subprocess.run('netsh wlan add profile filename=C:\\Users\\eymen\\AppData\\Local\\Temp\\asdfasfasda',check=True, shell=True)
 
@@ -68,6 +68,7 @@ def connect_to_wifi(ssid, password):
         print(f"Bağlantı {ssid} ağına başarıyla gerçekleştirildi.")
     except subprocess.CalledProcessError as e:
         print(f"Bağlantı sırasında bir hata oluştu: {e}")
+"""
 
 def scanwifi():
     cmd = subprocess.Popen(['netsh', 'wlan', 'show', 'networks', 'mode=Bssid'], stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
